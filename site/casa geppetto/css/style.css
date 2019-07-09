@@ -1,0 +1,261 @@
+.header {
+    background-color: orangered;
+
+}
+
+body {
+    margin: 0px;
+}
+
+#meniu0 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#meniu0 li {
+    float: left;
+}
+
+ul#meniu0 li a {
+    display: block;
+    position: relative;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav {
+    height: 51px;
+    width: 100%;
+    background-color: #535151;
+}
+
+.activ {
+    background-color: #535151;
+    border-bottom: 3px solid white;
+
+}
+
+#meniu0 li a:hover {
+    background-color: #535151;
+    border-bottom: 3px solid white;
+}
+
+.activ:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.activ2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #535151;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -63px;
+    left: 47.5%;
+    margin-left: 15px;
+
+}
+
+.div1 {
+    min-height: 200px;
+    background-color: #535151;
+}
+
+.hw {
+    color: white;
+    text-align: center;
+}
+
+#gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+.slider {
+    width: 500%;
+    position: relative;
+    font-size: 0;
+    animation: 20s slidy infinite;
+    /*    animation: 16s captionslidy infinite;*/
+}
+
+.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
+}
+
+.slider img {
+    width: 100%;
+    ;
+    height: auto;
+}
+
+.slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(9, 178, 229, 0.33);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: .6rem;
+}
+
+@media screen and (max-width:500px) {
+    .slider figure figcaption {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes captionslidy {
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    70% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    90% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    ul.meniu0 li {
+        width: 98%;
+    }
+
+    ul.meniu0 a {
+        width: 98%;
+    }
+
+}
+
+.b-col {
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    padding-left: 30px;
+}
+
+.paralax {
+    background-image: image(munte-balneao.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.para_text {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+.gal {
+    transform: scale(0.8);
+    padding: 0;
+
+}
+
+.form_input {
+    box-sizing: border-box;
+    border: 1px solid rgba(45, 45, 45, 0.3);
+    color: #2d2d2d;
+    line-height: inherit;
+    padding: 6px 20px;
+    width: 100%;
+    font-size: 14px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.in {
+    width: 350px;
+    height: 30px;
+}
+
+.text_font {
+    font-family: 'DM Sans', sans-serif;
+    ,
+    text-align: center
+}
