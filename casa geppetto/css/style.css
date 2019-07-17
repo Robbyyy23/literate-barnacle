@@ -5,6 +5,8 @@
 
 body {
     margin: 0px;
+    max-width: 1900px;
+    padding: 10px;
 }
 
 #meniu0 {
@@ -83,6 +85,7 @@ nav {
 .div1 {
     min-height: 200px;
     background-color: #535151;
+    max-width: 1900px;
 }
 
 .hw {
@@ -129,6 +132,15 @@ figure {
     box-sizing: border-box;
     font-size: 2rem;
     padding: .6rem;
+}
+
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width:500px) {
@@ -228,7 +240,7 @@ figure {
 }
 
 .paralax {
-    background-image: image(munte-balneao.jpg);
+    background-image: url("../imagini/munte.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -238,7 +250,7 @@ figure {
 .para_text {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: #fff;
     font-size: 50px;
 }
 
@@ -392,4 +404,20 @@ figure {
   font-size: 2em;
   line-height: 50px;
   color: #fff;
+}
+.pad{
+    padding-top: 48px;
+    padding-left: 25px;
+}
+.section-title:after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -40px;
+    border-top: 40px solid rgba(45, 45, 45, 0.9);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
 }

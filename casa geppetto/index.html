@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
 <body>
+<a id="bot_button"></a>
 <!--
     <div class="container-full">
         <div class="container-inner">
@@ -24,7 +27,7 @@
         </div>
     </div>
 -->
-    <div class="container-full ">
+    <div class="container-full">
         <div class="row">
             <nav>
                 <ul id="meniu0">
@@ -41,28 +44,37 @@
 
     <div class="container-full nopad">
         <div id="gallery,acasa">
-            <figure class="slider">
-                <figure>
-                    <img src="imagini/casa%20gepetto10.jpg">
-                </figure>
-                <figure>
-                    <img src="imagini/casa%20geppetto11.jpg">
-                </figure>
-                <figure>
-                    <img src="imagini/casa%20gepetto8.jpg">
-                </figure>
-                <figure>
-                    <img src="imagini/casa%20gepetto4.jpg">
-                </figure>
-                <figure>
-                    <img src="imagini/casa%20geppetto12.jpg">
-                </figure>
-            </figure>
+            <div id="owl-demo">
+                <div class="item"><img src="imagini/casa%20gepetto10.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="imagini/casa%20geppetto11.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="imagini/casa%20gepetto8.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="imagini/casa%20gepetto4.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="imagini/casa%20geppetto12.jpg" alt="Owl Image"></div>
+            </div>
+
+
+<!--            <figure class="slider">-->
+<!--                <figure>-->
+<!--                    <img src="imagini/casa%20gepetto10.jpg">-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                    <img src="imagini/casa%20geppetto11.jpg">-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                    <img src="imagini/casa%20gepetto8.jpg">-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                    <img src="imagini/casa%20gepetto4.jpg">-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                    <img src="imagini/casa%20geppetto12.jpg">-->
+<!--                </figure>-->
+<!--            </figure>-->
         </div>
     </div>
     <div class="container-full nopad">
-        <div class="row div1">
-            <div class="col-md-12 nopad activ2">
+        <div class="row div1 nopad">
+            <div class="col-md-12  activ2">
                 <h1 class="hw" id="despre">Despre</h1>
                 <h2 class="hw">Pensiunea Noastra</h2>
             </div>
@@ -89,8 +101,10 @@ Vorbim limba dumneavoastră!</p>
         </div>
         <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.8925895643099!2d24.1619027412533!3d45.80282921000801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c67a32789cd5b%3A0xaf271a2b5e99a9b6!2sStrada+Sandu+Aldea+1%2C+Sibiu!5e0!3m2!1sen!2sro!4v1562661044440!5m2!1sen!2sro" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     </div>
-    <div class=" col-md-12 row paralax" style="background-image: url(imagini/munte-balneo.jpg)">
-        <h1 class="para_text">Facilitati</h1>
+     <div class="row div1 col-md-12"> 
+        <div class="nopad activ3">
+            <h1 class="hw" id="facilitati">Facilitati</h1>
+        </div>
     </div>
 <!--    <div class="row col-md-"></div>-->
     <div class="row col-md-6">
@@ -110,106 +124,72 @@ Vorbim limba dumneavoastră!</p>
             <li>Italiană</li>
             <li>Franceză</li>
         </ul>
-        
-        
 
 
     </div>
-    <div class="row col-md-6">
-        <h4><i class="fas fa-sun"></i>Exterior</h4>
-        <ul>
-            <li>Gradină</li>
-            <li>Mobilier exterior</li>
-            <li>Filigorie</li>
-        </ul>
-        <h4><i class="fas fa-parking"></i>Parcare</h4>
-        <p>Este posibilă parcarea privată gratuit la proprietate (este necesară rezervare).</p>
-        <h4><i class="fas fa-wifi"></i>Internet</h4>
-        <p>Internet wireless este disponibil în întrega pensiune şi este gratuit.</p>
-    </div>
-    <div class="container-full nopad">
-        <div class="row div1 col-md-12">
-            <div class="nopad activ3">
-                <h1 class="hw" id="galerie">Galerie</h1>
-            </div>
+<div class="row pad col-md-6 " style="padding-left: 25px">
+    <h4><i class="fas fa-sun"></i>Exterior</h4>
+    <ul>
+        <li>Gradină</li>
+        <li>Mobilier exterior</li>
+        <li>Filigorie</li>
+    </ul>
+    <h4><i class="fas fa-parking"></i>Parcare</h4>
+    <p>Este posibilă parcarea privată gratuit la proprietate (este necesară rezervare).</p>
+    <h4><i class="fas fa-wifi"></i>Internet</h4>
+    <p>Internet wireless este disponibil în întrega pensiune şi este gratuit.</p>
+</div>
+<div class="container-full nopad">
+    <div class="row div1 col-md-12">
+        <div class="nopad section-title">
+            <h1 class="hw" id="galerie">Galerie</h1>
         </div>
     </div>
-    <div class="row div3 ">
-        <div><img src="imagini/casa%20gepetto2.jpg" class="col-md-3 gal"></div>
-        <div><img src="imagini/casa%20gepetto3.jpg" class="col-md-3 gal"></div>
-        <img src="imagini/casa%20gepetto7.jpg" class="col-md-3 gal">
-        <img src="imagini/casa%20gepetto8.jpg" class="col-md-3 gal">
-        <img src="imagini/casa%20gepetto6.jpg" class="col-md-3 gal">
-        <img src="imagini/casa%20gepetto5.jpg" class="col-md-3 gal">
-        <img src="imagini/casa%20gepetto4.jpg" class="col-md-3 gal">
-        <img src="imagini/casa%20geppetto%20espressor.jpg" class="col-md-3 gal">
-        
+</div>
+<div class="row div3 ">
+    <img src="imagini/casa%20gepetto2.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto3.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto7.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto8.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto6.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto5.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20gepetto4.jpg" class="col-md-3 gal">
+    <img src="imagini/casa%20geppetto%20espressor.jpg" class="col-md-3 gal">
+
+</div>
+<div class="row div1 col-md-12">
+    <div class="nopad activ3">
+        <h1 class="hw" id="contact">Contact</h1>
     </div>
-    <div class="row div1 col-md-12"> 
-        <div class="nopad activ3">
-            <h1 class="hw" id="contact">Contact</h1>
-        </div>
-    </div>
-    <div class="col-md-6 text_font">
-        <h1>Informatii de contact</h1>
-        <h2>Adresa</h2>
-        <h3> Strada Sandu Aldea Nr. 1,</h3>
-        <h3>550206 Sibiu Romania</h3>
-        <h2>Telefon</h2>
-        <h3>0723524396</h3>
-        <h2>Email</h2>
-        <h3>ploaieramona@yahoo.com</h3>
-        <a href="https://www.instagram.com"><i class="fab fa-instagram fa-3x"></i></a><a href="https://www.facebook.com/CasaGeppetto/"><i class="fab fa-facebook-square fa-3x"></i></a><a href="https://twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
-    </div>
-    <div class="col-md-6  text_font">
-        <form>
+</div>
+<div class="col-md-6 text_font">
+    <h1>Informatii de contact</h1>
+    <h2>Adresa</h2>
+    <h3> Strada Sandu Aldea Nr. 1,</h3>
+    <h3>550206 Sibiu Romania</h3>
+    <h2>Telefon</h2>
+    <h3>0723524396</h3>
+    <h2>Email</h2>
+    <h3>ploaieramona@yahoo.com</h3>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-3x"></i></a><a
+        href="https://www.facebook.com/CasaGeppetto/"><i class="fab fa-facebook-square fa-3x"></i></a><a
+        href="https://twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
+</div>
+<div class="col-md-6  text_font">
+    <form>
 
-            <h1>Date personale</h1>
-            <p><input type="text" placeholder="Nume" required size="20" maxlength="20" class="form_input"></p>
-            <p><input type="text" placeholder="Prenume" required size="20" maxlength="20" class="form_input"></p>
-            <p><input type="text" placeholder="Telefon" required class="form_input"></p>
-            <p><input type="Email" placeholder="Email" required class="form_input"></p>
-            <p><input type="text" placeholder="Data" required size="20" maxlength="50" class="form_input"></p>
+        <h1>Date personale</h1>
+        <p><input type="text" placeholder="Nume" required size="20" maxlength="20" class="form_input"></p>
+        <p><input type="text" placeholder="Prenume" required size="20" maxlength="20" class="form_input"></p>
+        <p><input type="text" placeholder="Telefon" required class="form_input"></p>
+        <p><input type="Email" placeholder="Email" required class="form_input"></p>
 
 
-
-            <textarea placeholder="Mesaj" id="test" cols="30" rows="10" class="form_input"></textarea><br>
-            <input type="submit" value="Trimite" class="form_input">
-        </form>
-    </div>
-    <a id="bot_button"></a>
-    
-<script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
-<script>
-
-jQuery(document).ready(function() {
-  
-  var btn = $('#button');
-
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
-
-});
-
-</script>
-var btn = $('#button');
-
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-
-</body></html>
+        <textarea placeholder="Mesaj" id="test" cols="30" rows="10" class="form_input"></textarea><br>
+        <input type="submit" value="Trimite" class="form_input">
+    </form>
+</div>
+<script src="js/script.js" type="application/javascript"></script>
+<script src="js/owl.carousel.js" type="application/javascript"></script>
+</body>
+</html>
