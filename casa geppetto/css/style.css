@@ -57,6 +57,7 @@ nav {
     margin-left: -2px;
 }
 
+/*
 .activ2:after {
     content: '';
     display: block;
@@ -81,11 +82,25 @@ nav {
     left: 46.5%;
     margin-left: 27px;
 }
-
+*/
+.activ4:after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -40px;
+    border-top: 30px solid #fff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(180deg);
+}
 .div1 {
     min-height: 200px;
     background-color: #535151;
     max-width: 1900px;
+    position: relative;
 }
 
 .hw {
@@ -409,15 +424,15 @@ figure {
     padding-top: 48px;
     padding-left: 25px;
 }
-.section-title:after{
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-left: -40px;
-    border-top: 40px solid rgba(45, 45, 45, 0.9);
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+.anch{
+    float: right;
+    color: white;
+    margin-top: 5px;
+    padding: 3px;
+}
+.my_img {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
 }
