@@ -86,11 +86,11 @@ nav {
 .activ4:after{
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 50%;
     width: 0;
     height: 0;
-    margin-left: -40px;
+    margin-left: -16px;
     border-top: 30px solid #fff;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -436,3 +436,23 @@ figure {
     max-width: 300px; 
     max-height: 300px;
 }
+.tb_txt{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.tb{
+ border: 1px solid black;
+}
+.tb_pad{
+    padding: 10px;
+    font-size: 18px;
+}
+.row1:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.txt_center{
+    text-align: center;
+}
+.paddd{}
