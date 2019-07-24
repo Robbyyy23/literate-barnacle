@@ -83,19 +83,20 @@ nav {
     margin-left: 27px;
 }
 */
-.activ4:after{
+.activ4:after {
     content: '';
     position: absolute;
     bottom: -1px;
     left: 50%;
     width: 0;
     height: 0;
-    margin-left: -16px;
+    margin-left: -30px;
     border-top: 30px solid #fff;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     transform: rotate(180deg);
 }
+
 .div1 {
     min-height: 200px;
     background-color: #535151;
@@ -149,10 +150,11 @@ figure {
     padding: .6rem;
 }
 
-#owl-demo .item{
+#owl-demo .item {
     margin: 3px;
 }
-#owl-demo .item img{
+
+#owl-demo .item img {
     display: block;
     width: 100%;
     height: auto;
@@ -296,163 +298,235 @@ figure {
     ,
     text-align: center
 }
-* {box-sizing:border-box}
+
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
+
 #bot_button {
-  display: inline-block;
-  background-color: #2d2d2d;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  margin: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s;
-  z-index: 1000;
+    display: inline-block;
+    background-color: #2d2d2d;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
 }
+
 #bot_button:hover {
-  cursor: pointer;
-  background-color: #535151;
+    cursor: pointer;
+    background-color: #535151;
 }
+
 #bot_button:active {
-  background-color: #555;
+    background-color: #555;
 }
+
 #bot_button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
 }
-.pad{
+
+.pad {
     padding-top: 48px;
     padding-left: 25px;
 }
-.anch{
+
+.anch {
     float: right;
     color: white;
     margin-top: 5px;
     padding: 3px;
 }
+
 .my_img {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
+    height: auto;
+    width: auto;
+    max-width: 300px;
     max-height: 300px;
 }
-.tb_txt{
+
+.tb_txt {
     text-decoration: underline;
     text-transform: uppercase;
 }
-.tb{
- border: 1px solid black;
+
+.tb1 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
-.tb_pad{
+
+.tb2 {
+    border-bottom: 1px solid black;
+}
+
+.tb3 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tb_pad {
     padding: 10px;
     font-size: 18px;
 }
+
 .row1:after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: block;
 }
-.txt_center{
+
+.txt_center {
     text-align: center;
 }
-.paddd{}
+
+.paddd {
+    padding-left: 85px;
+    padding: 30px;
+}
+
+.wid1 {
+    min-width: 1494px;
+    margin-left: -12px
+}
+
+.list-type {
+    list-style-type: none;
+}
+
+.submeniu {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+.anc {
+    margin-right: 10px;
+}
+.ceva1{
+    padding-top: 40px;
+}
+.ceva2{
+    padding-left: 70px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
