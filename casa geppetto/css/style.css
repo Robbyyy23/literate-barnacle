@@ -452,7 +452,7 @@ figure {
     float: right;
     color: white;
     margin-top: 5px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .my_img {
@@ -529,4 +529,7 @@ figure {
     padding-left: 70px;
     padding-bottom: 50px;
     padding-top: 40px;
+}
+.pad_icon{
+    padding: 2px;
 }
